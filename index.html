@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <style>
+     *{
+         
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      
+     }
+     
+.container{
+    max-height: 100px;
+    display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+}
+.header{
+    background-color: #F6F6F6;
+  max-height:50px;
+  
+    
+}
+.header ul{
+display: flex;
+justify-content: flex-end;
+
+   
+}
+.header ul li {
+   list-style-type: none;
+   margin:0 5px;
+ 
+ 
+ 
+}
+.header ul li a{
+    text-decoration: none;
+    color: #B1B7C8;
+    font-size: 12px;
+}
+.nav-blank ul {
+    display: flex;
+   
+}
+.nav-blank ul li{
+    list-style-type: none;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: aqua;
+    border-radius: 5px;
+    
+}
+.nav-blank ul li:hover{
+    background-color: green;
+    color: white;
+}
+.nav-blank ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    
+    align-items: flex-start;
+    display: flex;
+    justify-content:space-between;
+}
+.password{
+    color: #27B1D4;
+}
+.password:hover{
+    text-decoration: underline;
+}
+.navbar{
+    display: flex;
+    
+    background-color: green;
+    max-height:50px;
+}
+.navbar ul{
+     
+    display: flex;
+}
+.navbar ul li{
+   
+    list-style-type: none;
+    margin: 0 5px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar{
+    display: flex;
+}
+.sidebar ul{
+    
+    list-style-type: none
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar ul li a:hover{
+    text-decoration: underline;
+    color: green;
+}
+.orta-sayfa{
+    display: flex;
+    justify-content: center;
+}
+.para1{
+    margin-left: 300px;
+    margin-bottom: 300px;
+}
+.orta-sayfa-image{
+    display: flex;
+    align-items: flex-start;
+}
+.card{
+   margin:  4px;
+    font-size: 10px;
+    border: 2px solid green;
+   
+}
+.customer a{
+    display: flex;
+    
+    text-decoration: none;
+    max-height: 45px;
+}
+/* .icon{
+    margin-right:  20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+} */
+.iletisim{
+    display: flex;
+}
+.menu ul li a{
+text-decoration: none;
+}
+.menu ul li{
+    list-style-type: none;
+}
+.yan-menu{
+    margin-top: 20px;
+}
+.yan-menu ul li{
+    list-style-type: none;
+}
+.yan-menu ul li a{
+    text-decoration: none;
+}
+.yan-menu2{
+    margin-top: 20px;
+}
+.yan-menu2 ul li{
+    list-style-type: none;
+}
+.yan-menu2 ul li a{
+    text-decoration: none;
+}
+
+.tıkla  a{
+    display: block;
+    border: 1px solid #F4F4F4;
+    text-decoration: none;
+    margin-left: 300px;
+    color: #46AEB2;
+}
+.tıkla  a:hover{
+    text-decoration: underline;
+}
+ </style>
+</head>
+<body>
+   <div class="container">
+<div class="header">
+    <ul>
+        <li>
+            <a style="color: black;" href="#"><i class="fas fa-bell"></i>Size Özel Fırsatlar <span>|</span> </a>
+        </li>
+        <li>
+            <a href="#">Şube ve ATM'ler <span>|</span> </a>
+        </li>
+        <li>
+            <a href="#">Ürün ve Hizmet Ücretleri <span>|</span></a>
+        </li>
+        <li>
+            <a href="#">ENGLISH</a>
+        </li>
+    </ul>
+   
+</div>
+<div class="nav">
+    <img  src="garanti-bankası-logo.png" alt="">
+    <div class="nav-blank">
+        <ul>
+            <li>
+                <a href="#">Bireysel</a>
+            </li>
+            <li>
+                <a href="#">Kurumsal</a>
+            </li>
+            <li >
+                <a  href="#">Müşteri Ol</a>
+            </li>
+           
+        </ul>
+        <div class="password">Parola Almak İstiyorum / Parolamı Unuttum</div>
+       
+    </div>
+</div>
+<div style="margin-bottom: 10px;" class="navbar">
+    <ul>
+        <li>
+            <a href="#">Bireysel</a>
+        </li>
+        <li>
+            <a href="#">KOBİ</a>
+        </li>
+        <li>
+            <a href="#">Ticari</a>
+        </li>
+        <li>
+            <a href="#">Hakkımızda</a>
+        </li>
+    </ul>
+    <div>
+        <input type="text" placeholder="Arama" >
+        <i class="fas fa-search"></i>
+    </div>
+  
+    
+   
+</div>
+<div style="margin-bottom: 10px;">
+    Anasayfa > Bireysel >Dijital Bankacılık > İnternet Bankacılığı
+</div>
+<div class="sidebar">
+    <ul>
+        <li >
+            <a style="color: green;" href="#">İnternet Bankacılığı</a>
+        </li>
+        <li style="margin-left: 9px ;">
+            <a href="#">İşlem Ücretleri, Limitleri ve Saatleri</a>
+        </li>
+        <li style="margin-left: 9px ;">
+            <a href="#">Hisse Senedi İşlemleri</a>
+        </li>
+        <li style="margin-left: 9px ;">
+            <a href="#">Nasıl Şifre Alınır?</a>
+        </li>
+        <li>
+            <a href="#">Mobil Bankacılık</a>
+        </li>
+        <li>
+            <a href="#">Müşteri İletişim Merkezi 444 0 333</a>
+        </li>
+        <li>
+            <a href="#">Garanti BBVA ATM</a>
+        </li>
+        <li>
+            <a href="#">Uygulama Dükkanı</a>
+        </li>
+        <li>
+            <a href="#">Güvenlik</a>
+        </li>
+
+        <li>
+            <a href="#">CepBank</a>
+        </li>
+        <li>
+            <a href="#">Garanti API Store</a>
+        </li>
+        <li>
+            <a href="#">Open Talent</a>
+        </li>
+        <li>
+            <a href="#">Dijitalden Yapabileceğiniz Bankacılık İşlemleri</a>
+        </li>
+       
+       
+    </ul>
+    <div class="orta-sayfa">
+    <h4>Garanti BBVA İnternet Bankacılığı</h4>
+    <div class="orta-sayfa-image"><img src="10.jpg" alt=""></div>
+    
+</div>
+
+
+
+</div>
+
+<div class="para1">
+    Garanti BBVA İnternet Bankacılığı 7 gün 24 saat hizmetinizde! <br>
+Garanti BBVA İnternet Bankacılığı'na Müşteri Numaranız ya da T.C Kimlik Numaranız ile giriş <br> yapabilirsiniz. 
+
+Garanti BBVA İnternet Bankacılığı'nın tasarımını dünya trendlerine göre hazırladık. İlk bakışta <br> finansal bilgilerinizi daha kolay görüntüleyebilmeniz için, ana sayfa görünümünü <br> yeniledik. Garanti BBVA tasarımın yanında siz değerli müşterilerimizden gelen yorum ve <br> önerilerden çıkardığımız sonuçlar doğrultusunda internet bankacılığına yeni fonksiyonlar <br> ekliyor.
+<h3 style="color: green;">Yenilikler</h3>
+<div class="card-group">
+    <div class="card" style="border-top:2px solid green ;">
+      
+      <div class="card-body">
+        <h5 style="color: green;" class="card-title">SWIFT Takip Raporu Özelliği İnternet Bankacılığı’nda!</h5>
+        <p class="card-text">SWIFT Takip Raporu ile, talimatlarınızın detaylarını görüntüleme ayrıcalığından yararlanabilirsiniz. Talimatlarınızın ne zaman oluşturulduğunu, kaçıncı adımda ne kadar süreyle beklediğini ve alıcı bankaya ulaşıncaya kadar geçen süreyi izleyebilirsiniz.</p>
+      <img class="card-img-top" src="3.jpg" alt="Card image cap">
+      </div>
+    </div>
+    <div class="card"  >
+      
+      <div class="card-body">
+        <h5 style="color: green;" class="card-title">Dijital Kanallarda Parolalarımız Yenileniyor!</h5>
+        <p class="card-text">Müşterilerimizden aldığımız önerileri dikkate alarak parola yapısını yeniledik. Yalnızca rakamlardan oluşacak yeni parola yapısı ile, Garanti BBVA İnternet/Mobil ve BonusFlaş’a giriş sırasında parolanızı daha hızlı tuşlayabilir ve aklınızda kolay kalabilecek bir parola oluşturabilirsiniz. Üstelik Garanti</p>
+        <img class="card-img-top" src="4.jpg" alt="Card image cap">
+      </div>
+    </div>
+    <div class="card" >
+      
+      <div class="card-body">
+        <h5 style="color: green;" class="card-title">Mobil Uyumlu Yapı</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <img class="card-img-top" src="5.jpg" alt="Card image cap">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tıkla">
+
+    <a href="#">İnternet Bankacılıgından Yapabileceginiz İşlemler</a> 
+    <a href="#">Tüm Bankacılık İşlemleri</a>
+    <a href="#">Teknik Konular</a>
+
+
+</div>
+<hr>
+<div class="iletisim">
+<div class="customer">
+    <i class="fas fa-user-alt"></i> <a href="#">Müşteri Deneyimi Destek</a>
+    <i class="fas fa-phone"></i> <a href="#">İletişim</a>
+    <i class="fas fa-lock"></i> <a href="#">Güvenlik</a>
+</div>
+<!-- <div class="icon">
+    <i class="fab fa-facebook "></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-linkedin"></i>
+</div> -->
+<div class="menu">
+    <ul>
+        <li>
+            Hesaplama ve Başvuru
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">İhtiyaç Kredisi Hesaplama</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Konut/Ev Kredisi Hesaplama</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Taşıt Kredisi Hesaplama</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">KOBİ Kredisi Hesaplama</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Mevduat Faizi Hesaplama</a>
+        </li>
+        
+    </ul>
+</div>
+<div class="yan-menu" >
+    <ul>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Kredi Hesaplama</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">İhtiyaç Kredisi</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Kredi Kartı Başvurusu</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Emekli Promosyonu</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Güncel Döviz Kurları</a>
+        </li>
+    </ul>
+</div>
+<div class="yan-menu2" >
+    <ul>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Şube ve ATM'ler</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Yardım ve Öneriler</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">2022 Mevduat Zaman Aşımı</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">2021 Yatırım Zaman Aşımı</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">2022 Yatırım Zaman Aşımı</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="menu">
+    <ul>
+        <li>
+            Faydalı Sayfalar
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Sözleşmeler</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Yatırımcı İlişkileri</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Bilgi Toplumu Hizmetleri</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Gayrimenkuller</a>
+        </li>
+        <li>
+            <a style="color: #8C8C8C;" href="#">Garanti Emekli Sandığı</a>
+        </li>
+        
+    </ul>
+</div>
+</div>
+
+<hr>
+</div>
+
+
+</body>
+</html>
